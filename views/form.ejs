@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/reset.css' />
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+
+    <h1 class="text-center">
+        <%= title %>
+    </h1>
+    <div class="form-container">
+        <form action="/new" method="post">
+            <div class="message_input">
+                <label for="username" class="bold">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter Your Username">
+            </div>
+            <div class="message_input">
+                <label for="message" class="bold">Message:</label>
+                <input type="text" name="message" id="message" placeholder="Enter Your Message Here">
+            </div>
+            <div class="buttons">
+                <button class="btn-primary" type="reset">RESET</button>
+                <button class="btn-primary" type="submit">SEND</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

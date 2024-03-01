@@ -1,0 +1,148 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  padding-inline: 96px;
+  padding-block: 126px;
+  background-image: url(/images/blurry-gradient-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center
+}
+
+.board {
+  border: 1px solid black;
+  border-radius: 16px;
+  padding-block: 32px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.message-container {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin-inline: auto;
+}
+
+.messages {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.text-sm {
+  font-size: 12px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mt-8 {
+  margin-top: 32px;
+}
+
+.header-title,
+.header-subtitle {
+  text-align: center;
+}
+
+.btn-primary {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 12px 24px;
+  border: 0;
+  color: #fff;
+  background: #000a47;
+  line-height: 1.15;
+  font-size: 16px;
+
+
+}
+
+.mx-auto {
+  margin-inline: auto;
+}
+
+.btn-primary:hover {
+  transition: all .1s ease;
+  box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+}
+
+.bb-deco {
+  border-bottom: 1px solid black;
+}
+
+.message_username {
+  min-width: 75px;
+}
+
+.form-container {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin-inline: auto;
+  border: 1px solid black;
+  padding-inline-start: 46px;
+  padding-block: 80px;
+  border-radius: 16px;
+}
+
+.form-container form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+form label {
+  display: inline-block;
+  min-width: 80px;
+  margin-right: 36px;
+}
+
+form input {
+  all: unset;
+  color: black;
+  background-color: #fff;
+  min-width: 30vw;
+  padding: 16px 32px;
+  border-radius: 8px;
+}
+
+form input :is(:hover, :active) form button {
+  border: 2px solid aquamarine;
+
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+}

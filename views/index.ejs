@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/reset.css' />
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <div class="board">
+    <h1 class="header-title">
+      <%= title %>
+    </h1>
+    </p>
+    <div class="message-container">
+      <div class="messages">
+        <% messages.forEach(message=> { %>
+          <div class="message bb-deco">
+            <div class="message_username">
+              <p class="bold">
+                <%= message.user %>:
+              </p>
+            </div>
+            <p>
+              <%= message.text %>
+            </p>
+            <p class="text-sm ml-auto">
+              <%= message.added.toString().substring(0, message.added.toString().indexOf("GMT")) %>
+            </p>
+          </div>
+          <% }) %>
+      </div>
+      <a href="/new" class="mx-auto mt-8">
+        <button class="btn-primary ">NEW MESSAGE</button>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
